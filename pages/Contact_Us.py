@@ -9,7 +9,6 @@ df = pd.read_csv(r"C:\Users\Dell\Documents\pycharm\app2\practice\topics.csv")
 
 with st.form(key="emai_forms"):
     user_email = st.text_input("enter an email address")
-    opinion = st.selectbox("Comment", df["topic"])
 
     raw_message = st.text_area("Your comment here")
     message = (f"""\
